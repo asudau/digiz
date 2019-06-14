@@ -1908,7 +1908,7 @@ blockquote,blockquote p {
 					<h3 class="portal-boxenheadline">English For Your Studies B1</h3>
 					<p class="portal-boxendate">09.04.2018-11.06.2018</p>
 					<div class="portal-boxentext"><p>Unterstützt Sie bei der gezielten Auffrischung und Erweiterung von Lese- und Schreibfähigkeit in der englischen Sprache.<br>Dieser Kurs wird angeboten von der VHS Region Lüneburg.</p></div>
-					<a href="/dispatch.php/my_courses" type="submit" target='_blank' class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
+					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
