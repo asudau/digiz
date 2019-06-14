@@ -218,7 +218,7 @@ class SeminarController extends StudipController {
        
     }
     
-    public function set_action() {
+    public function set_action($course_id) {
         $style = Request::get('style');
         $description = Request::get('description');
         
