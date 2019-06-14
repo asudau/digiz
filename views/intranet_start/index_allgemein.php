@@ -1,5 +1,5 @@
 <div id="wrap">
-    <header>
+    <header>   
         <div class="container">
             <div id="logo" class="navbar-header">
                 <a href="/" title="Zur Startseite">
