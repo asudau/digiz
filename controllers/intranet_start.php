@@ -10,6 +10,7 @@ class IntranetStartController extends StudipController {
         parent::__construct($dispatcher);
         $this->plugin = $dispatcher->plugin;
         Navigation::activateItem('start');
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/digiz.css');
         PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/no_tabs.css');
     }
 
@@ -88,9 +89,6 @@ class IntranetStartController extends StudipController {
 //
 //        $this->internnewstemplate->icons = $icons;
         
-        //get special dates (maybe)
-        $this->birthday_dates = IntranetDate::findBySQL("type = 'birthday' AND begin = ?", array(date('d.m.Y', time())));
-
         //get new and recently visited courses of user
         $statement = DBManager::get()->prepare("SELECT s.Seminar_id, s.Name, ouv.visitdate, ouv.type "
                 . "FROM seminare as s "
@@ -204,7 +202,7 @@ class IntranetStartController extends StudipController {
                 //->addRecipient('elmar.ludwig@uos.de', 'Elmar Ludwig', 'Cc')
                  ->setReplyToEmail( User::findCurrent()->email)
                  ->setSenderEmail( User::findCurrent()->email)
-                 ->setSenderName('Intranet für Dozenten')
+                 ->setSenderName('Intranet fÃ¼r Dozenten')
                  ->setSubject($betreff)
                  ->setBodyHtml($mailtext)
                  ->setBodyHtml(strip_tags($mailtext))  
@@ -222,7 +220,7 @@ class IntranetStartController extends StudipController {
     }
     
     public function feedback_chat_action(){
-        //TODO - In Intranet Veranstaltung für Chat wählen
+        //TODO - In Intranet Veranstaltung fÃ¼r Chat wÃ¤hlen
         $this->seminar_id = '2dac34217342bd706ac114d57dd0b3ec';
         if (!$GLOBALS['perm']->have_studip_perm('autor', $this->seminar_id)){
             $this->access = false;
@@ -257,7 +255,7 @@ class IntranetStartController extends StudipController {
                 $thread['description'] = $content;
             }
             if ($thread->store()) {
-                $message = MessageBox::success(_('Feedback wurde veröffentlicht! <a href=\''. URLHelper::getLink("/plugins.php/blubber/streams/forum?cid=" . $this->seminar_id) .'\'>Direkt zum Chat </a>'));
+                $message = MessageBox::success(_('Feedback wurde verÃ¶ffentlicht! <a href=\''. URLHelper::getLink("/plugins.php/blubber/streams/forum?cid=" . $this->seminar_id) .'\'>Direkt zum Chat </a>'));
                 PageLayout::postMessage($message);
             } else {
                $message = MessageBox::error(_('Da ist was schief gegangen. Versuchen Sie es  <a href=\''. URLHelper::getLink("/plugins.php/blubber/streams/forum?cid=" . $this->seminar_id) .'\'>hier </a>'));
