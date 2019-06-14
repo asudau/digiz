@@ -1,0 +1,215 @@
+
+select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c5c7ca;
+    color: #3c434e;
+    padding: 5px;
+        padding-right: 5px;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    font-size: 1em;
+    vertical-align: baseline;
+    border: 1px solid #c5c7ca;
+    border-radius: 0;
+    padding: 1px 8px 1px 8px;
+    position: relative;
+    white-space: nowrap;
+}
+select {
+    padding-right: 20px;
+    background-image: url(../assets/images/arr_1down.svg);
+    -webkit-background-size: 10px 10px;
+    -moz-background-size: 10px 10px;
+    -o-background-size: 10px 10px;
+    background-size: 10px 10px;
+    background-position: right 4px center;
+    background-repeat: no-repeat;
+    height: 30px;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+Style für die Intranet-Startseiten, ursprünglich basierend auf den Intranetentwürfen der kvhs Ammerland
+*/
+
+#layout_page {
+    width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.intranet_news .contentbox > header{
+    display: none;
+}
+
+section.course > a {
+    color: #062c5b;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    padding: 4px;
+}
+
+section.folder > a {
+    margin-left: 5px;
+}
+
+section.folder a:hover {
+    text-decoration: underline;
+}
+section.folder > li {
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+section > section.folder {
+    padding: 5px 0 0 10px;
+}
+
+ .mitte {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif, verdana;
+    text-align: left;
+    position: inherit;
+    width: 997px;
+    height: auto;
+    min-height: 1100px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mitte a, a:link, a:visited {
+    color: #5d6a92;
+}
+
+a.portal-boxenbutton {
+    color: #fff;
+}
+
+.rechts {
+    width: 315px;
+    height: auto;
+    float: right;
+}
+
+.csc-default {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif, verdana;
+}
+.csc-space-after-25 {
+    margin-bottom: 25px !important;
+}
+h1.csc-firstHeader{
+    border-bottom: none;
+}
+.dsR4 {
+    width: 315px;
+    height: auto;
+}
+.dsR15 {
+    width: 105px;
+    height: 125px;
+}
+.dsR15 > div {
+    height: 125px;
+}
+
+div.intranet-kachel{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #5d6a92;
+    border-width: 1px;
+    background-color: #eee;
+}
+div.intranet-kachel:hover {
+    background-color: #ddd;
+}
+
+h1.intranet {
+    color: #062c5b;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+}
+h4.intranet{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-image: url(<?=URLHelper::getLink("plugins_packages/elanev/IntranetMitarbeiterInnen/assets/images/h4_hintergrund.gif") ?>);
+    background-repeat: repeat-x;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+h4.intranet, h2.box_header {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    background-image: url(/fileadmin/template/img/h4_hintergrund.gif);
+    background-repeat: repeat-x;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+.haupt {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: 341px;
+}
+.zentriert {
+    text-align: center;
+}
+
+h2.intranet {
+    padding: 10px;
+    margin-top: -42px;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+}
+
+h2.intranet-inner {
+    padding: 10px 0px 10px 0px;
+    margin-top: -42px;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    position: relative;
+    border-bottom: none;
+}
+
+section.schwarzesbrett-widget article header h1 a:before {
+   content: none;
+}
+
+form.studip_form fieldset select {
+    width: 100% !important;
+}
+form.studip_form fieldset input {
+    width: 100% !important;
+}
+form.studip_form fieldset textarea {
+    width: 100% !important;
+}
