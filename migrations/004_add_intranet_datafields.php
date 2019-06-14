@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Till Glöggler <tgloeggl@uos.de>
+ * @author Annelene Sudau <asudaul@uos.de>
  */
 class AddIntranetDatafields extends Migration
 {
@@ -26,7 +26,7 @@ class AddIntranetDatafields extends Migration
                 `object_class`, `edit_perms`, `view_perms`, `priority`,
                 `mkdate`, `chdate`, `type`, `typeparam`, `is_required`, `description`)
             VALUES (md5('Intranet-Veranstaltung'), 'Intranet-Veranstaltung', 1,
-                NULL, 6, 6, '0', NULL, NULL, 1, '', '0', 'Veranstaltung zu Intranetbereich hinzufügen')"
+                NULL, 6, 6, '0', NULL, NULL, 1, '', '0', 'Veranstaltung zu Intranetbereich hinzufÃ¼gen')"
         );
     }
 

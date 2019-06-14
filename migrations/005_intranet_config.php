@@ -10,7 +10,7 @@ class IntranetConfig extends Migration
 
     public function up () {
         $db = DBManager::get();
-        $db->exec("CREATE TABLE IF NOT EXISTS `intranet_config` (
+        $db->exec("CREATE TABLE IF NOT EXISTS `intranetconfig` (
           `Institut_id` varchar(32) NOT NULL,
           `template` text,
           PRIMARY KEY (Institut_id)
@@ -24,7 +24,7 @@ class IntranetConfig extends Migration
 
 
         $db = DBManager::get();
-        $db->exec("DROP TABLE intranet_config");
+        $db->exec("DROP TABLE intranetconfig");
         SimpleORMap::expireTableScheme();
 
     }

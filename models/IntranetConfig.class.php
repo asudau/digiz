@@ -22,7 +22,7 @@ class IntranetConfig extends SimpleORMap
      */
     public function __construct($id = null) {
 
-        $this->db_table = 'intranet_config';
+        //$this->db_table = 'intranetconfig';
         parent::__construct($id);
 
     }
@@ -94,7 +94,7 @@ class IntranetConfig extends SimpleORMap
      public static function addUserToIntranetCourses($user_id, $intranet_id, $status) {
         $courses = IntranetConfig::find($intranet_id)->getRelatedCourses();
         
-        //in Veranstaltungen gibt es nichts höheres als Dozenten
+        //in Veranstaltungen gibt es nichts hÃ¶heres als Dozenten
         if($status == 'admin'){
             $status = 'dozent';
         }
