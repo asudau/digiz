@@ -5,6 +5,10 @@
 
 <style>
 
+    #current_page_title {
+        display: none;
+    }    
+    
 iframe {
     height: 320px;
     width: 660px;
@@ -1891,7 +1895,6 @@ blockquote,blockquote p {
 </div>
 
 <section class="portal-boxen js-portalboxen">
-	<h2 class="kursportal-h2 align-center"></h2>
 	<div class="row">
 
 

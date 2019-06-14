@@ -57,37 +57,7 @@ class IntranetStartController extends StudipController {
             }
         }
         asort($this->newsPosition);
-
-        //get permission of currentUser (autor/dozent) //ammerland Spezial
-        
-//        $sem_id_mitarbeiterinnen = Config::get()->getValue('INTRANET_SEMID_MITARBEITERINNEN');
-//        
-//        $sem_id_projektbereich = Config::get()->getValue('INTRANET_SEMID_PROJEKTBEREICH');
-//        
-//        global $perm; 
-//        $this->admin = $perm->have_studip_perm('dozent', $sem_id_mitarbeiterinnen);
-//        $this->projekt_admin = $perm->have_studip_perm('dozent', $sem_id_projektbereich);
-//        
-
-//        $this->edit_link_files = URLHelper::getLink("folder.php?cid=" . $sem_id_projektbereich . "&cmd=tree");
-        
-        //get news of connected seminars
-
-//        $dispatcher = new StudipDispatcher();
-//        $controller = new NewsController($dispatcher);
-//        $response = $controller->relay('news/display/' . $sem_id_mitarbeiterinnen);
-//        //$response = $controller->relay('news/display/9fc5dd6a84acf0ad76d2de71b473b341'); //localhost
-//        $this->internnewstemplate = $GLOBALS['template_factory']->open('shared/string');
-//        $this->internnewstemplate->content = $response->body;
-//        
-//
-//        if (StudipNews::CountUnread() > 0) {
-//            $navigation = new Navigation('', PluginEngine::getLink($this, array(), 'read_all'));
-//            $navigation->setImage(Icon::create('refresh', 'clickable', ["title" => _('Alle als gelesen markieren')]));
-//            $icons[] = $navigation;
-//        }
-//
-//        $this->internnewstemplate->icons = $icons;
+       
         
         //get new and recently visited courses of user
         $statement = DBManager::get()->prepare("SELECT s.Seminar_id, s.Name, ouv.visitdate, ouv.type "
