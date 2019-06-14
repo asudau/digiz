@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Till Glöggler <tgloeggl@uos.de>
+ * @author Annelene Sudau <asudau@uos.de>
  */
 class AddCourseDatafield extends Migration
 {
@@ -31,7 +31,7 @@ class AddCourseDatafield extends Migration
                 `object_class`, `edit_perms`, `view_perms`, `priority`,
                 `mkdate`, `chdate`, `type`, `typeparam`, `is_required`, `description`)
             VALUES (md5('Overview style'), 'Overview style', 1,
-                NULL, 4, 5, '0', NULL, NULL, 3, '', '0', 'Design für Übersichtsseite')"
+                NULL, 4, 5, '0', NULL, NULL, 3, '', '0', 'Design fÃ¼r Ãœbersichtsseite')"
         );
       
         $stm->execute();
