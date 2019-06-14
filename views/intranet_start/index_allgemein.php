@@ -1,105 +1,10 @@
 <div id="wrap">
-    <header>   
+  
+    <div id="hero">
         <div class="container">
-            <div id="logo" class="navbar-header">
-                <a href="/" title="Zur Startseite">
-                    <img src="fileadmin/templates/vhs_lueneburg/layout/img//vhs_logo.png" class="img-responsive">                    
-                </a>
-            </div>
-
-            <div class="header-right clearfix">
-                <div id="header-functions" class="clearfix">
-                   
-                    <div class="top-link pull-left"><a href="/100-jahre-vhs/" title="Titel">100 Jahre VHS</a></div><!-- ND146A-->
-<div id="header-wk" class="pull-left header-icon inactive">
-  <span class="glyphicon glyphicon-shopping-cart fa-2x" aria-hidden="true" title="Es befinden sich keine Kurse im Warenkorb"></span>
-</div>
-<!-- ND146E -->
-<div id="header-login" class="pull-left header-icon">
-    <!-- H68A-->
-
-<div class='menue'>
-</div>
-
-<div class='hauptseite_ohnestatus'>
-<!-- H108A-->
-<a href="index.php?id=32&kathaupt=236" rel="popover" data-placement="bottom" data-popover-content="#kw-login-menu-content" class="popover-maker">
-  <span class="glyphicon glyphicon-user x2" aria-hidden="true"></span></a>
-<div id="kw-login-menu-content" class="hide">
-     <form id="wbloginform" action="index.php?id=32&amp;kathaupt=236" method="post">
-        <input type="hidden" name="wbl_login" value="1">
-
-        <div class="input-group">
-            <label for="wblogin" class="sr-only">Benutzername</label>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            <input id="wblogin" type="text" name="wblogin" placeholder="E-Mail" class="form-control">
+            <div id="slider" class="rslides_container hidden-xs"><ul class="rslides"><li><a href="100-jahre-vhs/"><img src="fileadmin/user_upload/langenachtvhslg_header.jpg" width="1140" height="357"   alt="" ></a></li><li><a href="100-jahre-vhs/"><img src="fileadmin/user_upload/vhs_team_100_park.jpg" width="1140" height="357"   alt="" ></a></li><li><a href="programm/kunst-und-kultur/"><img src="fileadmin/user_upload/kreativD3L_4685.jpg" width="1140" height="438"   alt="" ></a><p class="caption">Kreatives Gestalten</p></li><li><a href="programm/persoenlichkeit/"><img src="fileadmin/user_upload/gesundheit.jpg" width="3723" height="1586"   alt="" ></a><p class="caption">Gesund mit der VHS</p></li></ul></div>
         </div>
-        <div class="input-group">
-            <label for="wbpw" class="sr-only">Passwort</label>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            <input id="wbpw" type="password" name="wbpasswort" placeholder="Passwort eingeben" class="form-control">
-        </div>
-        <button class="btn btn-theme btn-block btn-xs" alt="Anmelden" title="Anmelden" type="submit">      
-                    Anmelden
-                </button>
-        <br />
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-right">
-                    <a href="index.php?id=32&amp;kathaupt=256">Passwort vergessen?</a>
-                </div>
-               <div class="text-right">
-                    <a href="index.php?id=32&amp;kathaupt=236">Registrieren</a>
-                </div>
-            </div>
-        </div>
-    </form>
-    
-</div>
-
-</div>
     </div>
-    <div id="header-search-xs" class="pull-left visible-xs visible-sm header-icon">
-        <a href="index.php?id=15" title="kurssuche"><span class="glyphicon glyphicon-search x2" aria-hidden="true"></span></a>
-    </div>
-    <div id="header-navbar-toogle" class="pull-left">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"><span class="sr-only">Toggle navigation</span><span class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span><span class="icon-bar bottom-bar"></span></button>
-    </div>
-    <div id="header-search" class="pull-left hidden-xs hidden-sm">
-
-<div id="kw-schnellsuche" class="clearfix">
-<form action="index.php" method="get" class="navbar-form navbar-left" id="kw-fsearch-form">
-  <div class="input-group">
-    <input type="hidden" name="id" value="15">
-    <input type="hidden" name="kathaupt" value="26;">
-    <input type="hidden" name="suchesetzen" value="false;">
-    <input name="kfs_stichwort_schlagwort" type="text" class="form-control" placeholder="Kurssuche" id="kw-fsearch-input">
-    <span class="input-group-btn">
-      
-              <button class="btn btn-theme" title="Suchen" type="submit" id="kw-submit-form">
-          <i class="fa fa-search"></i>
-	      </button>          
-    </span>
-  </div>
-</form>
-</div>
-<!-- B394E -->
-                    </div>
-
-                </div>
-                <nav id="navigation" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right"><li><a href="/" title="Home (ALT+H)"  accesskey="H">Home</a></li><li class="dropdown"><a href="programm/" title="Programm (ALT+P)" class="dropdown-toggle" data-toggle="dropdown" accesskey="P">Programm</a><ul class="dropdown-menu"><li><a href="programm/aktuelles-vhs-programm/" title="Aktuelles VHS Programm (ALT+A)"  accesskey="A">Aktuelles VHS Programm</a></li><li><a href="programm/junge-vhs/" title="Junge VHS (ALT+J)"  accesskey="J">Junge VHS</a></li><li><a href="programm/veranstaltungen/" title="Veranstaltungen (ALT+V)"  accesskey="V">Veranstaltungen</a></li><li><a href="programm/bildungsurlaub/" title="Bildungsurlaub (ALT+B)"  accesskey="B">Bildungsurlaub</a></li><li><a href="programm/gesellschaft-und-politik/" title="Gesellschaft und Politik (ALT+G)"  accesskey="G">Gesellschaft und Politik</a></li><li><a href="programm/persoenlichkeit/" title="Persönlichkeit (ALT+E)"  accesskey="E">Persönlichkeit</a></li><li><a href="programm/gesundheit/" title="Gesundheit (ALT+S)"  accesskey="S">Gesundheit</a></li><li><a href="programm/kunst-und-kultur/" title="Kunst und Kultur (ALT+K)"  accesskey="K">Kunst und Kultur</a></li><li><a href="programm/berufliche-bildung/" title="Berufliche Bildung (ALT+R)"  accesskey="R">Berufliche Bildung</a></li><li><a href="programm/paedagogik/" title="Pädagogik (ALT+D)"  accesskey="D">Pädagogik</a></li><li><a href="programm/edv-und-medien/" title="EDV und Medien (ALT+U)"  accesskey="U">EDV und Medien</a></li><li><a href="programm/fremdsprachen/" title="Fremdsprachen (ALT+F)"  accesskey="F">Fremdsprachen</a></li><li><a href="programm/deutschkurse/" title="Deutschkurse (ALT+T)"  accesskey="T">Deutschkurse</a></li><li><a href="programm/grundbildung/" title="Grundbildung (ALT+N)"  accesskey="N">Grundbildung</a></li><li><a href="programm/schulabschluesse/" title="Schulabschlüsse (ALT+C)"  accesskey="C">Schulabschlüsse</a></li><li><a href="programm/kurse-im-landkreis/" title="Kurse im Landkreis (ALT+I)"  accesskey="I">Kurse im Landkreis</a></li><li><a href="programm/kurssuche/" title="Kurssuche">Kurssuche</a></li></ul></li><li class="dropdown"><a href="service/allgemeine-infos/" title="Service" class="dropdown-toggle" data-toggle="dropdown">Service</a><ul class="dropdown-menu"><li><a href="service/allgemeine-infos/" title="Allgemeine Infos (ALT+L)"  accesskey="L">Allgemeine Infos</a></li><li><a href="service/bildungsurlaub/" title="Bildungsurlaub">Bildungsurlaub</a></li><li><a href="service/firmenkurse/" title="Firmenkurse (ALT+M)"  accesskey="M">Firmenkurse</a></li><li><a href="service/dozenten/" title="Dozenten (ALT+O)"  accesskey="O">Dozenten</a></li><li><a href="service/vhsbildungsfonds/" title="VHSBILDUNGSFONDS">VHSBILDUNGSFONDS</a></li></ul></li><li class="dropdown"><a href="ueber-uns/leitbild/" title="Über uns" class="dropdown-toggle" data-toggle="dropdown">Über uns</a><ul class="dropdown-menu"><li><a href="ueber-uns/leitbild/" title="Leitbild">Leitbild</a></li><li><a href="ueber-uns/qualitaetsmanagement/" title="Qualitätsmanagement (ALT+Q)"  accesskey="Q">Qualitätsmanagement</a></li><li><a href="ueber-uns/vhs-team/" title="VHS-Team">VHS-Team</a></li><li><a href="ueber-uns/job-angebote/" title="Job-Angebote">Job-Angebote</a></li></ul></li><li class="dropdown"><a href="projekte/" title="Projekte" class="dropdown-toggle" data-toggle="dropdown">Projekte</a><ul class="dropdown-menu"><li><a href="projekte/biwaq-ein-projekt-speziell-fuer-frauen/" title="BIWAQ - Speziell für Frauen (ALT+W)"  accesskey="W">BIWAQ - ein Projekt speziell für Frauen</a></li><li><a href="projekte/taf/" title="TAF">TAF</a></li><li><a href="projekte/zielorientiert-hauptschulabschluss-mit-perspektive/" title="Zielorientiert - Hauptschulabschluss mit Perspektive (ALT+Z)"  accesskey="Z">Zielorientiert - Hauptschulabschluss mit Perspektive</a></li><li><a href="projekte/talentcampus/" title="talentCAMPus">talentCAMPus</a></li></ul></li><li><a href="vhscloud/" title="vhs.cloud">vhs.cloud</a></li></ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    
-        <div id="hero">
-            <div class="container">
-                <div id="slider" class="rslides_container hidden-xs"><ul class="rslides"><li><a href="100-jahre-vhs/"><img src="fileadmin/user_upload/langenachtvhslg_header.jpg" width="1140" height="357"   alt="" ></a></li><li><a href="100-jahre-vhs/"><img src="fileadmin/user_upload/vhs_team_100_park.jpg" width="1140" height="357"   alt="" ></a></li><li><a href="programm/kunst-und-kultur/"><img src="fileadmin/user_upload/kreativD3L_4685.jpg" width="1140" height="438"   alt="" ></a><p class="caption">Kreatives Gestalten</p></li><li><a href="programm/persoenlichkeit/"><img src="fileadmin/user_upload/gesundheit.jpg" width="3723" height="1586"   alt="" ></a><p class="caption">Gesund mit der VHS</p></li></ul></div>
-            </div>
-        </div>
     
     
 
