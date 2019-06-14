@@ -1897,21 +1897,18 @@ blockquote,blockquote p {
 <section class="portal-boxen js-portalboxen">
 	<div class="row">
 
-
-		
-
-<div class="columns small-12 medium-6 large-4 portal-boxenouter">
+        <div class="columns small-12 medium-6 large-4 portal-boxenouter">
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/business.jpg' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
-					<h3 class="portal-boxenheadline">Meine Kurse und Projekte</h3>
+					<h3 class="portal-boxenheadline">Meine Kurse</h3>
 					<p class="portal-boxendate"></p>
 				</div>
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">English For Your Studies B1</h3>
 					<p class="portal-boxendate">09.04.2018-11.06.2018</p>
 					<div class="portal-boxentext"><p>Unterstützt Sie bei der gezielten Auffrischung und Erweiterung von Lese- und Schreibfähigkeit in der englischen Sprache.<br>Dieser Kurs wird angeboten von der VHS Region Lüneburg.</p></div>
-					<a href="https://vhs.lueneburg.de/kurse/kurssuche/kurs/Englisch-Online+English+For+Your+Studies+B1/nr/181-42000/bereich/details/#inhalt" type="submit" target='_blank' class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
+					<a href="/dispatch.php/my_courses" type="submit" target='_blank' class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
