@@ -1,7 +1,6 @@
-<h1><?= _('Zusatzangaben') ?></h1>
-
 <? if (!empty($aux['rows'])) : ?>
-    <form method="post">
+    <form method="post" action="<?= $controller->url_for('course/members/store_additional')?>">
+        <?= CSRFProtection::tokenTag()?>
         <table class="default">
             <caption><?= _('Zusatzangaben bearbeiten') ?></caption>
             <thead>
@@ -15,7 +14,7 @@
             <? foreach ($aux['rows'] as $entry): ?>
                 <tr>
                     <? foreach ($aux['head'] as $key => $value): ?>
-                        <td><?= $entry[$key] ?></td>
+                        <td><?= $key === 'name' ? htmlReady($entry[$key]) : $entry[$key] ?></td>
                     <? endforeach; ?>
                 </tr>
             <? endforeach; ?>
@@ -24,7 +23,6 @@
             <tr>
                 <td colspan="<?= count($aux['head']) ?>">
                     <?= \Studip\Button::create(_('Speichern'), 'save') ?>
-                    <?= \Studip\Button::create(_('Exportieren'), 'export') ?>
                 </td>
             </tr>
             </tfoot>
