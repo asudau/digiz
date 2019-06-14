@@ -11,6 +11,8 @@ class IntranetStartController extends StudipController {
         $this->plugin = $dispatcher->plugin;
         Navigation::activateItem('start');
         PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/digiz.css');
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/main.css');
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/foundation.css');
         PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/no_tabs.css');
     }
 
