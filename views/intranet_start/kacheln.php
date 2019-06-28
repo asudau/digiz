@@ -1902,7 +1902,7 @@ blockquote,blockquote p {
 	<div class="row">
     <div class="columns small-12 medium-6 large-8">    
         <div class="row">
-        <div class="columns small-12 medium-6 large-6 portal-boxenouter">
+        <div class="columns small-12 medium-6 large-6">
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/business.jpg' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
@@ -1921,7 +1921,7 @@ blockquote,blockquote p {
 		</div>
 
 
-		<div class="columns small-12 medium-6 large-6 portal-boxenouter">
+		<div class="columns small-12 medium-6 large-6">
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/coffee.png' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
@@ -1943,7 +1943,7 @@ blockquote,blockquote p {
 <!--<iframe src='https://www.youtube.com/embed/VAibAJquJSo'></iframe>-->
 
         <div class="row">
-        <div class="columns small-12 medium-6 large-6 portal-boxenouter">
+        <div class="columns small-12 medium-6 large-6">
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/question-mark-small.jpg' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
@@ -1962,7 +1962,7 @@ blockquote,blockquote p {
 		</div>
 
 
-        <div class="columns small-12 medium-6 large-6 portal-boxenouter">
+        <div class="columns small-12 medium-6 large-6">
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/orientierung.jpg' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
@@ -1984,7 +1984,7 @@ blockquote,blockquote p {
         
     <div class="columns small-12 medium-6 large-4"> 
                 
-        <div class="columns small-12 medium-6 large-4 portal-boxenouter">
+        <div class="columns small-12 medium-6 large-12">
             <div>
                 <?= $this->render_partial($activities, compact('widget')) ?>
             </div>
