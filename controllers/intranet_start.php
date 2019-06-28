@@ -90,6 +90,7 @@ class IntranetStartController extends StudipController {
         //folder auf Unterebene
         $this->parentfolder = $details['parentfolder'];
         
+        $plugin_af = PluginManager::getInstance()->getPlugin('ActivityFeed');
         $activityFeed = new \ActivityFeed();
         $this->activities =  $activityFeed->getPortalTemplate();
 
