@@ -425,7 +425,7 @@ class SeminarController extends StudipController {
 	// Dokumente 
  	//Get File-Folders of Intern Seminar MitarbeiterInnen
     $db = DBManager::get();
-    $stmt = $db->prepare("SELECT folder_id, name FROM folders WHERE seminar_id = :cid");
+    $stmt = $db->prepare("SELECT id, name FROM folders WHERE seminar_id = :cid");
     $stmt->bindParam(":cid", $this->course->id);
     $stmt->execute();
     $this->folder = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -435,9 +435,9 @@ class SeminarController extends StudipController {
     foreach ($this->folder as $folder){
 
         $db = \DBManager::get();
-        $stmt = $db->prepare("SELECT * FROM `dokumente` WHERE `range_id` = :range_id
+        $stmt = $db->prepare("SELECT * FROM `file_refs` WHERE `folder_id` = :range_id
             ORDER BY `name`");
-        $stmt->bindParam(":range_id", $folder['folder_id']);
+        $stmt->bindParam(":range_id", $folder['id']);
         $stmt->execute();
         $response = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
