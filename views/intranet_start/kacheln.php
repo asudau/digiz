@@ -1956,16 +1956,8 @@ blockquote,blockquote p {
 			
 			</div>
 		</div>
-		
-    <div class="columns small-12 medium-6 large-4 portal-boxenouter">
-        <div>
-            <?= $this->render_partial($activities, compact('widget')) ?>
-        </div>
-    </div>        
 
-
-        
-<iframe src='https://www.youtube.com/embed/VAibAJquJSo'></iframe>
+<!--<iframe src='https://www.youtube.com/embed/VAibAJquJSo'></iframe>-->
 
 
     <div class="columns small-12 medium-6 large-4 portal-boxenouter">
@@ -2004,6 +1996,12 @@ blockquote,blockquote p {
 			
 			</div>
         </div>
+        
+        <div class="columns small-12 medium-6 large-4 portal-boxenouter">
+            <div>
+                <?= $this->render_partial($activities, compact('widget')) ?>
+            </div>
+        </div>  
 </div>
 </section>
 
