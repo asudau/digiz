@@ -425,7 +425,7 @@ class SeminarController extends StudipController {
 	// Dokumente 
  	//Get File-Folders of Intern Seminar MitarbeiterInnen
     $db = DBManager::get();
-    $stmt = $db->prepare("SELECT id, name FROM folders WHERE seminar_id = :cid");
+    $stmt = $db->prepare("SELECT id, name FROM folders WHERE range_id = :cid");
     $stmt->bindParam(":cid", $this->course->id);
     $stmt->execute();
     $this->folder = $stmt->fetchAll(PDO::FETCH_ASSOC);
