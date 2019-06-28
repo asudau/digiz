@@ -90,7 +90,7 @@ class IntranetStartController extends StudipController {
         //folder auf Unterebene
         $this->parentfolder = $details['parentfolder'];
         
-        $activityFeed = new ActivityFeed();
+        $activityFeed = new \ActivityFeed();
         $this->activities =  $activityFeed->getPortalTemplate();
 
          //get upcoming courses (studip dates of configured category)
