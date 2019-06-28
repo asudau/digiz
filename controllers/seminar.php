@@ -124,9 +124,9 @@ class SeminarController extends StudipController {
         // Fetch frageboegen
         $dispatcher = new StudipDispatcher();
         $controller = new QuestionnaireController($dispatcher);
-        $response = $controller->relay('questionnaire/widget/' . $this->course->id);
-        $this->questionnairetemplate = $GLOBALS['template_factory']->open('shared/string');
-        $this->questionnairetemplate->content = $response->body;
+        //$response = $controller->relay('questionnaire/widget/' . $this->course->id);
+        //$this->questionnairetemplate = $GLOBALS['template_factory']->open('shared/string');
+        //$this->questionnairetemplate->content = $response->body;
         
         if (StudipNews::CountUnread() > 0) {
             $navigation = new Navigation('', PluginEngine::getLink($this, array(), 'read_all'));
@@ -134,8 +134,8 @@ class SeminarController extends StudipController {
             $icons[] = $navigation;
         }
 
-        $this->questionnairetemplate->icons = $icons;
-        $this->questionnaires =  $this->questionnairetemplate;
+        //$this->questionnairetemplate->icons = $icons;
+        //$this->questionnaires =  $this->questionnairetemplate;
         
         
         
