@@ -1924,7 +1924,7 @@ blockquote,blockquote p {
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">Meine Kurse</h3>
 					<div class="portal-boxentext"><p>Eine vollständige Liste deiner Kurse findest du, wenn du oben auf dieses Icon <?=Icon::create('seminar',Icon::ROLE_INFO_ALT)?> klickst oder direkt hier</p></div>
-					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern',Icon::ROLE_INFO_ALT)?></a>
+					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter zu meinen Kursen<?=Icon::create('link-intern',Icon::ROLE_INFO_ALT)?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
