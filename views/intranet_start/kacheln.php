@@ -1957,8 +1957,8 @@ blockquote,blockquote p {
         <div class="portal-boxeninner" style="background-image: url(http://localhost/studip3.4/public/plugins_packages/asudau@elan-ev.de/VHSViewPlugin/images/banner.jpg)" onclick="changeclass(this);">
 
             <div class="portal-boxenintro">
-                <h3 class="portal-boxenheadline">Die VHS Osnabrück bietet ihren Dozentinnen und Dozenten regelmäßig die Gelegenheit die Funktionen und Einsatzmöglichkeiten von Stud.IP in einer Schulung vor Ort kennenzulernen. Die nächste Schulung findet am 13.02.2019 statt. Zusätzlich stellen wir Ihnen verschiedene Vidoes und Anleitungen bereit um Stud.IP selbst zu erkunden. Viel Spaß!</h3>
-                <p class="portal-boxendate"></p>
+                
+                <?= $this->render_partial($activities, compact('widget')) ?>
             </div>
             <div class="portal-boxenoverlay">
                 <h3 class="portal-boxenheadline">Vom Beruf ins Studium</h3>
