@@ -1938,24 +1938,12 @@ blockquote,blockquote p {
 			</div>
 		</div>
 
-
-				<div class="columns small-12 medium-6 large-4 portal-boxenouter">
-			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/people.jpg' ?>)" onclick="changeclass(this);">
-			
-				<div class="portal-boxenintro">
-					<h3 class="portal-boxenheadline">Stud.IP für DozentInnen</h3>
-					<p class="portal-boxendate"></p>
-				</div>
-				<div class="portal-boxenoverlay">
-					<h3 class="portal-boxenheadline">Mathematik für Wirtschaftswissenschaften</h3>
-					<p class="portal-boxendate">28.05.2018-22.06.2018</p>
-					<div class="portal-boxentext"><p>Jetzt wirds speziell! In diesem Kurs erwerben Sie gezielt mathematische Grundlagenkenntnisse für ein wirtschaftswissenschaftliches Studium.</p></div>
-					<a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="<?=$plugin->getPluginURL().'/assets/images/icons/white/arr_1right.svg'?>"></a>
-					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
-				</div>
-			
-			</div>
-		</div>
+        
+        <div class="columns small-12 medium-6 large-4 portal-boxenouter">
+            <div>
+                <?= $this->render_partial($activities, compact('widget')) ?>
+            </div>
+        </div>  
 
 <!--<iframe src='https://www.youtube.com/embed/VAibAJquJSo'></iframe>-->
 
@@ -1996,12 +1984,7 @@ blockquote,blockquote p {
 			
 			</div>
         </div>
-        
-        <div class="columns small-12 medium-6 large-4 portal-boxenouter">
-            <div>
-                <?= $this->render_partial($activities, compact('widget')) ?>
-            </div>
-        </div>  
+
 </div>
 </section>
 
