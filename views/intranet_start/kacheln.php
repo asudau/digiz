@@ -12,7 +12,12 @@
 #stream-container .activity-day {
     margin: 0 40% !important;
 }    
-    
+
+#activity-headline h4 {
+    margin-left: 30px;
+    color: #28497c;
+}
+
 iframe {
     height: 320px;
     width: 660px;
@@ -42,6 +47,11 @@ iframe {
 .portal-boxentext p {
     color: #fff;
 }
+
+.portal-boxenoverlay a {
+    color: #2ba6cb;
+}
+
 .portal-boxenclose {
     position: absolute;
     top: 1rem;
@@ -231,6 +241,8 @@ select {
   margin-right: -0.625em;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
   max-width: none;
   *zoom: 1;
 }
@@ -1910,10 +1922,9 @@ blockquote,blockquote p {
 					<p class="portal-boxendate"></p>
 				</div>
 				<div class="portal-boxenoverlay">
-					<h3 class="portal-boxenheadline">English For Your Studies B1</h3>
-					<p class="portal-boxendate">09.04.2018-11.06.2018</p>
-					<div class="portal-boxentext"><p>Unterstützt Sie bei der gezielten Auffrischung und Erweiterung von Lese- und Schreibfähigkeit in der englischen Sprache.<br>Dieser Kurs wird angeboten von der VHS Region Lüneburg.</p></div>
-					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
+					<h3 class="portal-boxenheadline">Meine Kurse</h3>
+					<div class="portal-boxentext"><p>Eine vollständige Liste deiner Kurse findest du, wenn du oben auf diese Icon <?=Icon::create('seminar','clickable')?> klickst oder direkt hier</p></div>
+					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern','clickable')?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1931,8 +1942,8 @@ blockquote,blockquote p {
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">Tipp: Stud.IP Nachrichten</h3>
 					<p class="portal-boxendate"></p>
-					<div class="portal-boxentext"><p>Stud.IP bietet ein eigenes internes Nachrichtensystem. Interne Nachrichten werden Ihnen zusätzlich per Mail weitergeleitet. Dies können Sie optional im Bereich Profil/Einstellungen anpassen. </p></div>
-					<a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter zu meinen Nachrichten <img src="http://localhost/studip3.4/public/assets/images/icons/lightblue/mail.svg"></a>
+					<div class="portal-boxentext"><p>Stud.IP bietet ein eigenes internes Nachrichtensystem. Interne Nachrichten werden dir zusätzlich per Mail weitergeleitet. Dies kannst du optional im Bereich Profil/Einstellungen anpassen. </p></div>
+					<a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter zu meinen Nachrichten <?=Icon::create('mail','clickable')?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1951,10 +1962,9 @@ blockquote,blockquote p {
 					<p class="portal-boxendate"></p>
 				</div>
 				<div class="portal-boxenoverlay">
-					<h3 class="portal-boxenheadline">Zeit- und Selbstmanagement</h3>
-					<p class="portal-boxendate">13.08.2018-14.09.2018</p>
-					<div class="portal-boxentext"><p>Auch Erholung muss sein! Ein Studium und parallele Verpflichtungen erfordern eine gute Organisation. Lernen Sie die passenden Techniken kennen.</p></div>
-					<a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
+					<h3 class="portal-boxenheadline">Wie funktioniert das alles hier?</h3>
+					<div class="portal-boxentext"><p>Antworten auf die wichtigsten Fragen findest du hier</p></div>
+					<a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern','clickable')?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1966,14 +1976,13 @@ blockquote,blockquote p {
 			<div class="portal-boxeninner" style="background-image: url(<?=$plugin->getPluginURL().'/assets/images/orientierung.jpg' ?>)" onclick="changeclass(this);">
 			
 				<div class="portal-boxenintro">
-					<h3 class="portal-boxenheadline">Stud.IP erkunden</h3>
+					<h3 class="portal-boxenheadline">Lerneinheit: Courseware kennenlernen</h3>
 					<p class="portal-boxendate"></p>
 				</div>
 				<div class="portal-boxenoverlay">
-					<h3 class="portal-boxenheadline">HANDWERKSZEUG studieren</h3>
-					<p class="portal-boxendate">10.09.2018-14.10.2018</p>
-					<div class="portal-boxentext"><p>Keine Angst vor Hausarbeiten und Referaten! In dem Kurs HANDWERKSZEUG studieren machen Sie sich mit den wichtigsten Spielregeln vertraut.</p></div>
-					<a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
+					<h3 class="portal-boxenheadline">Courseware kennlernen</h3>
+					<div class="portal-boxentext"><p>Hier gehts direkt zur Lerneinheit <b>Courseware kennlernen</b>. Dort findest du Inhalte, Lernvideos und Aufgaben rund um Courseware. </p></div>
+					<a href="https://digiz.elan-ev.de/plugins.php/courseware/courseware?cid=f52bf725525ff11d7097baa23952b6f9" type="submit" class="btn btn-primary portal-boxenbutton">Los geht's <?=Icon::create('link-intern','clickable')?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1983,7 +1992,9 @@ blockquote,blockquote p {
     </div>
         
     <div class="columns small-12 medium-6 large-4"> 
-                
+        <div id='activity-headline'>
+            <h4>Aktuelle Aktivitäten</h4>
+        </div>        
         <div class="columns small-12 medium-6 large-12">
             <div>
                 <?= $this->render_partial($activities, compact('widget')) ?>
