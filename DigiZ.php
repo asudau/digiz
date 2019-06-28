@@ -76,6 +76,23 @@ class DigiZ extends StudIPPlugin implements StandardPlugin, SystemPlugin
         if (Navigation::hasItem('/start') && $intranets){
             Navigation::getItem('/start')->setURL(PluginEngine::getLink($this, array(), 'intranet_start/index/' . $intranets[0]) );
         }
+        if (!$perm->have_perm('admin') && $user->id != 'nobody') {
+ 
+			if (Navigation::hasItem('/search')){
+                Navigation::removeItem('/search');	
+			}
+             if (Navigation::hasItem('/community')){
+                Navigation::removeItem('/community');
+            }
+			
+			if (Navigation::hasItem('/tools')){
+				if (!$perm->have_perm('dozent')) {
+                    Navigation::removeItem('/tools');
+				}
+			}
+        }
+
+        
         //Intranetnutzer werden statt auf die allgemeine Startseite auf ihre individuelle Startseite weitergeleitet
         if ( $referer!=str_replace("dispatch.php/start","",$referer) &&  $intranets){
             //$result = $this->getSemStmt($GLOBALS['user']->id);
