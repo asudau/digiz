@@ -1923,8 +1923,8 @@ blockquote,blockquote p {
 				</div>
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">Meine Kurse</h3>
-					<div class="portal-boxentext"><p>Eine vollständige Liste deiner Kurse findest du, wenn du oben auf diese Icon <?=Icon::create('seminar','clickable')?> klickst oder direkt hier</p></div>
-					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern','clickable')?></a>
+					<div class="portal-boxentext"><p>Eine vollständige Liste deiner Kurse findest du, wenn du oben auf dieses Icon <?=Icon::create('seminar',Icon::ROLE_INFO_ALT)?> klickst oder direkt hier</p></div>
+					<a href="/dispatch.php/my_courses" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern',Icon::ROLE_INFO_ALT)?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1943,7 +1943,7 @@ blockquote,blockquote p {
 					<h3 class="portal-boxenheadline">Tipp: Stud.IP Nachrichten</h3>
 					<p class="portal-boxendate"></p>
 					<div class="portal-boxentext"><p>Stud.IP bietet ein eigenes internes Nachrichtensystem. Interne Nachrichten werden dir zusätzlich per Mail weitergeleitet. Dies kannst du optional im Bereich Profil/Einstellungen anpassen. </p></div>
-					<a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter zu meinen Nachrichten <?=Icon::create('mail','clickable')?></a>
+					<a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter zu meinen Nachrichten <?=Icon::create('mail',Icon::ROLE_INFO_ALT)?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1964,7 +1964,7 @@ blockquote,blockquote p {
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">Wie funktioniert das alles hier?</h3>
 					<div class="portal-boxentext"><p>Antworten auf die wichtigsten Fragen findest du hier</p></div>
-					<a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern','clickable')?></a>
+					<a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <?=Icon::create('link-intern',Icon::ROLE_INFO_ALT)?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
@@ -1982,7 +1982,7 @@ blockquote,blockquote p {
 				<div class="portal-boxenoverlay">
 					<h3 class="portal-boxenheadline">Courseware kennlernen</h3>
 					<div class="portal-boxentext"><p>Hier gehts direkt zur Lerneinheit <b>Courseware kennlernen</b>. Dort findest du Inhalte, Lernvideos und Aufgaben rund um Courseware. </p></div>
-					<a href="https://digiz.elan-ev.de/plugins.php/courseware/courseware?cid=f52bf725525ff11d7097baa23952b6f9" type="submit" class="btn btn-primary portal-boxenbutton">Los geht's <?=Icon::create('link-intern','clickable')?></a>
+					<a href="https://digiz.elan-ev.de/plugins.php/courseware/courseware?cid=f52bf725525ff11d7097baa23952b6f9" type="submit" class="btn btn-primary portal-boxenbutton">Los geht's <?=Icon::create('link-intern',Icon::ROLE_INFO_ALT)?></a>
 					<button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
 				</div>
 			
