@@ -9,6 +9,10 @@
         display: none;
     }    
     
+#stream-container .activity-day {
+    margin: 0 40% !important;
+}    
+    
 iframe {
     height: 320px;
     width: 660px;
@@ -201,7 +205,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 63.75em;
+  max-width: 70.75em;
   *zoom: 1;
 }
 
@@ -1954,20 +1958,8 @@ blockquote,blockquote p {
 		</div>
 		
     <div class="columns small-12 medium-6 large-4 portal-boxenouter">
-        <div class="portal-boxeninner" style="background-image: url(http://localhost/studip3.4/public/plugins_packages/asudau@elan-ev.de/VHSViewPlugin/images/banner.jpg)" onclick="changeclass(this);">
-
-            <div class="portal-boxenintro">
-                
-                <?= $this->render_partial($activities, compact('widget')) ?>
-            </div>
-            <div class="portal-boxenoverlay">
-                <h3 class="portal-boxenheadline">Vom Beruf ins Studium</h3>
-                <p class="portal-boxendate">20.08.2018-24.09.2018</p>
-                <div class="portal-boxentext"><p>Sie spielen mit dem Gedanken, zu studieren? In diesem Orientierungskurs finden Sie Wege an die Hochschule und Unterstützung bei der Entscheidung für oder gegen ein Studium.</p></div>
-                <a href="<?=$GLOBALS['ABSOLUTE_URI_STUDIP']?>dispatch.php/messages/overview" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
-                <button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
-            </div>
-
+        <div>
+            <?= $this->render_partial($activities, compact('widget')) ?>
         </div>
     </div>        
 
@@ -2012,26 +2004,6 @@ blockquote,blockquote p {
 			
 			</div>
         </div>
-
-    <div class="columns small-12 medium-6 large-4 portal-boxenouter">
-        <div class="portal-boxeninner" style="background-image: url(http://localhost/studip3.4/public/plugins_packages/asudau@elan-ev.de/VHSViewPlugin/images/banner.jpg)" onclick="changeclass(this);">
-
-            <div class="portal-boxenintro">
-                <h3 class="portal-boxenheadline">Bei Fragen und Wünschen rund um Stud.IP helfen wir Ihnen gerne weiter:</h3>
-                <p class="portal-boxendate">Albrechtk@osnabrueck.de</p>
-            </div>
-            <div class="portal-boxenoverlay">
-                <h3 class="portal-boxenheadline">Vom Beruf ins Studium</h3>
-                <p class="portal-boxendate">20.08.2018-24.09.2018</p>
-                <div class="portal-boxentext"><p>Sie spielen mit dem Gedanken, zu studieren? In diesem Orientierungskurs finden Sie Wege an die Hochschule und Unterstützung bei der Entscheidung für oder gegen ein Studium.</p></div>
-                <a href="" type="submit" class="btn btn-primary portal-boxenbutton">weiter <img src="/assets/images/icons/white/arr_1right.svg"></a>
-                <button class="portal-boxenclose" onclick="changeBack(this);"><img src="<?=$plugin->getPluginURL()?>/assets/images/close.png" alt="[X]"></button>
-            </div>
-
-        </div>
-    </div>    
-
-
 </div>
 </section>
 
