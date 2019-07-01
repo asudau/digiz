@@ -19,6 +19,7 @@ class IntranetStartController extends StudipController {
         parent::before_filter($action, $args);
         
         //PageLayout::addStylesheet('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+        PageLayout::addStylesheet($this->plugin->getPluginURL().'/assets/intranet_start.css');
         PageLayout::setTitle(_("Meine Startseite"));
     }
 
